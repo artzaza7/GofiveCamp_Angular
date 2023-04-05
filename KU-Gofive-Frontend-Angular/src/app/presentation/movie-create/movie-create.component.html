@@ -1,0 +1,71 @@
+<div class="needs-validation main-container">
+  <form action="" #formDir="ngForm" [formGroup]="form" (ngSubmit)="submit(formDir)">
+    <div class="row inner-container">
+      <div class="col-6 col-lg-4">
+        <img [src]="'https://i1.sndcdn.com/artworks-OWi59TAz9xcpylms-nGkXXQ-t500x500.jpg'">
+      </div>
+      <div class="col-6 col-lg-4">
+
+        <label for="validationServer02" class="form-label">Movie name</label>
+        <input type="text" class="form-control" id="validationServer02" value="" required formControlName="name">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Please choose a username.
+        </div>
+
+        <label for="validationServer02" class="form-label">Poster</label>
+        <input type="text" class="form-control" id="validationServer02" value="" required formControlName="url">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Please choose a username.
+        </div>
+
+        <label for="validationServer02" class="form-label">Summaries</label>
+        <input type="text" class="form-control" id="validationServer02" value="" required formControlName="description">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Please choose a username.
+        </div>
+
+        <label for="validationServer02" class="form-label">Category</label>
+        <input type="text" class="form-control" id="validationServer02" value="" required formControlName="category">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Please choose a username.
+        </div>
+
+        <label for="validationServer02" class="form-label">Running Time</label>
+        <input type="number" class="form-control" id="validationServer02" value="" required formControlName="runningTime">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Please choose a username.
+        </div>
+
+        <label for="validationServer02" class="form-label">Release Date</label>
+        <input type="text" class="form-control" id="validationServer02" value="" required formControlName="releaseDate">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Please choose a username.
+        </div>
+
+        <div class="mt-2 ml-5">
+          <button class="btn btn-success" type="submit">Create</button>
+          <button class="btn btn-success" type="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</div>

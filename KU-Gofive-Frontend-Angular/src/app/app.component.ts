@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'KU-Gofive-Frontend-Angular';
+  title: string = 'KU-Gofive-Frontend-Angular';
 }

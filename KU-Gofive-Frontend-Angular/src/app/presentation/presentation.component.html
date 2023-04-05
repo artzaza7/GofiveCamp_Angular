@@ -1,0 +1,25 @@
+<p>presentation works! {{ title }}</p>
+<p *ngIf="description">Description: {{ description }}</p>
+<p *ngFor="let item of array">
+    <span [ngSwitch]="item">
+    <span *ngSwitchCase="'Arbid'"
+        style = "color: red;">
+        {{ item }}
+    </span>
+    <span *ngSwitchCase="'Big'"
+        style = "color: blue;">
+        {{ item }}
+    </span>
+    <span *ngSwitchCase="'Art'"
+        style = "color: green;">
+        {{ item }}
+    </span>
+    <span *ngSwitchDefaul
+        style = "color: yellow;">
+        {{ item }}
+    </span></span>
+</p>
+<input [value]="description"
+(input)="onChange
+($event)">
+

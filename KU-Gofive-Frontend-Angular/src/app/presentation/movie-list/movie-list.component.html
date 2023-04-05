@@ -1,0 +1,15 @@
+<div class="movie-list">
+  <div class="row main-contrainer background-check boderClass">
+    <div class="col-6 col-lg-4 movie-pictiure-picture background-check ">
+      <img [src]="movie?.coverUrl" alt="" style="width: 80%; height: auto;">
+    </div>
+    <div class="col-6 col-lg-8" style="width: 50%;">
+      <p>{{movie?.title}}</p>
+      <p>{{movie?.description}}
+      </p>
+      <p>{{movie?.category}}</p>
+      <p>{{movie?.runningTime}}</p>
+    </div>
+    <p (click)="onRemoveMovie()">Remove</p>
+  </div>
+</div>
